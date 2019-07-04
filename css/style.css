@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+.header{
+  background: #fff;
+  top: 0;
+  width: 100%;
+}
+.header-inner{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.fa-bolt{
+  font-size: 40px;
+  color: #4e4e4e;
+}
+.conpact-btn{
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  background: #74cfae;
+  color: #fff;
+  font-family: "Lato";
+  font-size: 12px;
+  outline: none;
+  padding: 14px 12px;
+}
+.conpact-btn:hover{
+  color: #333;
+}
+/*_____________________________*/
+.inner{
+  margin: 0 auto;
+  width: 1100px;
+}
+/*_________画面上部固定未_________*/
+.main{
+  background: #f2f2f2;
+  text-align: center;
+  width: 100%;
+}
+/*_______________________________*/
+.theme{
+  padding: 250px;
+}
+.theme-text{
+  color: #74cfae;
+  font-family: "lato";
+  font-size: 90px;
+  font-weight: 700;
+}
+.theme-text-free{
+  color: #c0c0c0;
+  font-family: "Raleway";
+  font-size: 30px;
+  margin-top: 20px;
+}
+/*______________________________*/
+.iphone{
+  background: #74cfae;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.iphone-main{
+  margin-top: 50px;
+}
+.iphone-side{
+  color: #fff;
+  text-align: center;
+  margin-left: 100px;
+  width: 670px;
+}
+.iphone-text{
+  font-family: "Raleway";
+  font-size: 24px;
+}
+.paragraph{
+  font-family: "lato";
+  font-size: 20px;
+  margin-top: 35px; 
+}
+/*______________________________*/
+.latest-work{
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+}
+.work-text{
+  margin-top: 60px;
+  color: #4e4e4e;
+  font-family: "Raleway";
+  font-size: 24px;
+}
+.img-box{
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  font-size: 0;
+}
+.img-item{
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  opacity: 0.7;
+  margin: 40px 100px 40px 0;
+}
+.img-item:nth-child(3n){
+  margin-right: 0;
+}
+.img-item:hover{
+  opacity: 1;
+}
+.latest-work__bottom{
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 70px 0;
+}
+.latest-work__bottom__text{
+  color: #4e4e4e;
+  font-family: "lato";
+  font-size: 16px;
+  width: 460px;
+}
+.e-mail{
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  background: #74cfae;
+  color: #fff;
+  font-family: "lato";
+  font-size: 12px;
+  margin-left: 90px;
+  outline: none;
+  padding: 14px 20px;
+}
+.e-mail:hover{
+  color: #333;
+}
+/*_______Email Me!top寄過______*/
+.skill{
+  display: flex;
+  flex-direction: column;
+  background: #4e4e4e;
+  text-align: center;
+  width: 100%;
+}
+.skill-text{
+  color: #fff;
+  font-size: 24px;
+  margin-top: 70px;
+  font-family: "Lato";
+}
+.skill-box{
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+.skill-box__item{
+  margin: 60px 0 100px 180px;
+}
+.skill-box__item:first-child{
+  margin-left: 0;
+}
+.img-text{
+  font-size: 16px;
+  padding: 15px;
+  font-family: "Lato";
+}
+/*__________________________________*/
+.sns{
+  background: #f2f2f2;
+  display: flex;
+  justify-content: center;
+}
+.sns__link{
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  color: #74cfae;
+  font-size: 50px;
+  padding: 25px 80px;
+  cursor: pointer;
+  text-align: center;
+  margin: 200px 0 200px 0;
+}
+.sns__link:hover{
+  background: #fff;
+}
+/*____________________________________*/
+.footer{
+  position: relative;
+  background: #74cfae;
+  bottom: 0;
+  height: 57px;
+  width: 100%;
+}
+.footer-text{
+  position: absolute;
+  color: #fff;
+  right: 200px;
+  font-family: "Lato";
+  margin: 20px 0 25px 0;
+}

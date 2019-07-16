@@ -11,83 +11,85 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/sp.css" media="(max-width: 767px)">
-    <link rel="stylesheet" href="css/tab.css" media="(min-width: 768px) and (max-width: 1199px)">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   </head>
-  <body>
+  <body class="textstyle">
     <header class="header">
       <div class="inner header-inner">
-        <i class="fas fa-bolt"></i>
-        <a class="contact-btn">Contact</a>
-        <!--
+        <a class="fas fa-bolt bolt" href="#!"></a>
+        <a class="contact-btn hover" href="#!">Contact</a>
         <div class="drawer">
           <input class="nav-input" type="checkbox">
           <label class="humberger" for="nav-input"><span></span></label>
         </div>
-        -->
       </div>
     </header>
-     <main>
+      <main>
        <div class="main">
-         <div class="inner theme">
+          <div class="inner theme">
             <h1 class="theme-text">Bolt Theme</h1> 
-            <p class="theme-text-free">FREE BOOTSTRAP THEMES</p>  
+            <p class="theme-text-free raleway">FREE BOOTSTRAP THEMES</p>  
           </div>
-          <section class="inner iphone">
-           <img class="iphone-main" src="img/iphone.png" alt="iphone">
-           <div class="iphone-side">
-              <h2 class="iphone-text">WHAT WE CAN DO?</h2>
-              <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>     
-           </div>
+          <section class="iphone">
+            <div class="inner iphone-inner">
+              <img class="img-iphone" src="img/iphone.png" alt="iphone">
+              <div class="iphone-side">
+                <h2 class="iphone-text raleway">WHAT WE CAN DO?</h2>
+                <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>     
+              </div>
+            </div>
           </section>
-         <article class="inner latest-work"> 
-           <h3 class="work-text">OUR LATEST WORK</h3>
-           <div class="img-box">
-              <img class="img-item" src="img/01.jpg">
-              <img class="img-item" src="img/02.jpg">
-              <img class="img-item" src="img/03.jpg">
-              <img class="img-item" src="img/04.jpg">
-              <img class="img-item" src="img/05.jpg">
-              <img class="img-item" src="img/06.jpg"> 
+          <article class="latest-work"> 
+            <div class="inner">
+              <h2 class="work-text raleway">OUR LATEST WORK</h3>
+              <div class="img-box">
+                <a class="img-item hover" href=""><img src="img/01.jpg"></a>
+                <a class="img-item hover" href=""><img src="img/02.jpg"></a>
+                <a class="img-item hover" href=""><img src="img/03.jpg"></a>
+                <a class="img-item hover" href=""><img src="img/04.jpg"></a>
+                <a class="img-item hover" href=""><img src="img/05.jpg"></a>
+                <a class="img-item hover" href=""><img src="img/06.jpg"></a>
+              </div>
+              <div class="latest-work__bottom">
+                <p class="latest-work__bottom__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                <a class="e-mail hover" href="#!">Email Me!</a>    
+              </div>
             </div>
-           <div class="latest-work__bottom">
-              <p class="latest-work__bottom__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
-              <a class="e-mail">Email Me!</a>    
-           </div>
           </article>
-          <section class="inner skill">
-            <h4 class="skill-text">OUR SKILLS</h4>
-            <div class="skill-box">
-            <div class="skill-box__item">
-               <img src="img/circle_01.png">
-                <figcaption class="img-text">JavaScript
-               </figcaption>
-             </div>
-             <div class="skill-box__item">
-               <img src="img/circle_02.png">
-              <figcaption class="img-text">WordPress
-              </figcaption>
-             </div>
-             <div class="skill-box__item">
-               <img src="img/circle_03.png">
-               <figcaption class="img-text">Photoshop
-               </figcaption>
-             </div>
-             <div class="skill-box__item">
-              <img src="img/circle_04.png">
-               <figcaption class="img-text">Bootstrap
-              </figcaption>
+          <section class="skill">
+            <div class="inner">
+              <h2 class="skill-text">OUR SKILLS</h4>
+              <div class="skill-box">
+                <figure class="skill-box__item">
+                  <img src="img/circle_01.png">
+                  <figcaption class="img-text">JavaScript
+                  </figcaption>
+                </figure>
+                <figure class="skill-box__item">
+                  <img src="img/circle_02.png">
+                  <figcaption class="img-text">WordPress
+                  </figcaption>
+                </figure>
+                <figure class="skill-box__item">
+                  <img src="img/circle_03.png">
+                  <figcaption class="img-text">Photoshop
+                  </figcaption>
+                </figure>
+                <figure class="skill-box__item">
+                  <img src="img/circle_04.png">
+                  <figcaption class="img-text">Bootstrap
+                  </figcaption>
+                </figure>
+              </div>
             </div>
-          </div>
           </section>
           <nav class="inner sns">
-            <i class="fab fa-facebook-f sns__link"></i>
-            <i class="fab fa-dribbble sns__link"></i>
-            <i class="fab fa-twitter sns__link"></i>
-            <i class="fas fa-envelope sns__link"></i>
+            <a class="fab fa-facebook-f sns__link hover" href="#!"></a>
+            <a class="fab fa-dribbble sns__link hover" href="#!"></a>
+            <a class="fab fa-twitter sns__link hover" href="#!"></a>
+            <a class="fas fa-envelope sns__link hover" href="#!"></a>
           </nav>
-       </div>
+        </div>
     </main>
     <footer class="footer">
       <div class="inner">

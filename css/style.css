@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.textstyle{
+body{
   font-family: "lato";
 }
 .raleway{
@@ -8,9 +8,6 @@
 }
 a{
   text-decoration: none;
-}
-.hover{
-  transition-delay: 0.3s;
 }
 .header{
   background: #fff;
@@ -35,16 +32,18 @@ a{
 }
 .contact-btn:hover{
   color: #333;
+  transition-timing-function: linear;
 }
-.drawer{
+.humberger{
   display: none;
 }
 .inner{
   margin: 0 auto;
   width: 1100px;
 }
-.main{
+main{
   background: #f2f2f2;
+  padding-top: 70px;
   text-align: center;
   width: 100%;
 }
@@ -66,17 +65,18 @@ a{
   width: 100%;
 }
 .iphone-inner{
-  display: table;
-  table-layout: fixed;
   padding-top: 50px;
 }
 .img-iphone{
-  display: table-cell;
-  margin: 0 auto;
+  display: inline-block;
+  width: 30%;
+}
+.img-ip{
+  vertical-align: bottom;
 }
 .iphone-side{
   color: #fff;
-  display: table-cell;
+  display: inline-block;
   line-height: initial;
   vertical-align: top;
   width: 60%;
@@ -97,16 +97,16 @@ a{
   font-size: 24px;
 }
 .img-box{
-  margin: 0 auto;
+  margin-top: 40px;
   font-size: 0;
 }
 .img-item{
   display: inline-block;
   opacity: 0.7;
-  margin: 80px 0 0 100px;
+  margin-left: 100px;
 }
-.img-item:nth-child(-n+3){
-  margin-top: 40px;
+.img-item:nth-child(n+4){
+  margin-top: 80px;
 }
 .img-item:nth-child(3n-2){
   margin-left: 0;
@@ -137,8 +137,8 @@ a{
 }
 .skill{
   display: flex;
-  flex-direction: column;
   background: #4e4e4e;
+  flex-direction: column;
   padding: 70px 0 100px 0;
   text-align: center;
   width: 100%;
@@ -149,8 +149,9 @@ a{
 }
 .skill-box{
   display: flex;
-  justify-content: center;
   color: #fff;
+  justify-content: center;
+  margin-top: 50px;
 }
 .skill-box__item{
   margin-left: 180px;
@@ -171,8 +172,9 @@ a{
 .sns__link{
   color: #74cfae;
   font-size: 50px;
-  padding: 25px 80px;
+  padding: 28px 0;
   text-align: center;
+  width: 185px;
 }
 .sns__link:hover{
   background: #fff;
@@ -186,7 +188,6 @@ a{
   text-align: right;
   color: #fff;
 }
-/*_________________________________________*/
 @media (max-width: 1199px){
   .inner{
     width: 97%;
@@ -195,19 +196,21 @@ a{
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 50px 0 25px 0;
   }
   .img-iphone{
     margin: 0 auto;
+    padding: 50px 0 25px 0;
   }
   .iphone-side{
     margin: 0 auto;
-    width: 100%;
+    width: 85%;
   }
   .iphone-text{
     margin-top: 20px;
   }
   .paragraph{
-    margin: 35px 0 25px 0; 
+    margin-top: 35px; 
   }
   .img-box{
     display: flex;
@@ -221,19 +224,33 @@ a{
   .img-item:nth-child(3n-2){
     margin: 0 auto;
   }  
+  .img-item:nth-child(-n+3){
+    margin-top: 0;
+  }
+  .img-item:first-child{
+    margin-top: 40px;
+  }
   .img-item:nth-child(4){
     margin-top: 80px;
+  }
+  .img-item:nth-child(n+5){
+    margin-top: 0;
+  }
+  .img-item:hover{
+    opacity: 1;
   }
   .latest-work__bottom{
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: 80px 0 0 0;
   }
   .latest-work__bottom__text{
-    width: 800px;
+    width: 70%;
   }
   .e-mail{
-    margin: 40px 0 70px 0;
+    margin: 0 auto;
+    margin-top: 40px;
   }
   .skill-box{
     display: flex;
@@ -243,18 +260,22 @@ a{
   .skill-box__item{
     margin: 88px 0 0 0;
   }
-  .skill-box__item:first-child{
-    margin-top: 0;
-  }
 }
 @media (max-width: 767px){
-  .drawer{
-    display: flex;
-    padding: 10px;
+  .inner{
+    width: 97%;
+  }
+  .humberger{
+    display: grid;
     border: 1px solid #ddd;
     border-radius: 4px;
+    box-sizing: border-box;
+    padding: 10px;
   }
-  .drawer:hover{
+  .line{
+    background-color: #ddd;
+    height: 3px;
+    width: 20px;
   }
   .contact-btn{
     display: none;
@@ -263,47 +284,32 @@ a{
     padding: 160px 0 130px 0;
   }
   .theme-text{
-    color: #74cfae;
-    font-family: "lato";
+    display: inline-block;
     font-size: 80px;
-    font-weight: 700;
+    width: 80%;
   }
   .theme-text-free{
-    color: #c0c0c0;
-    font-family: "Raleway";
+    display: inline-block;
     font-size: 30px;
     margin-top: 20px;
+    width: 80%;
   }
-  .iphone{
-    background: #74cfae;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  .img-iphone{
     width: 100%;
   }
-  .iphone-main{
-    margin-top: 50px;
-  }
   .iphone-side{
-    color: #fff;
-    text-align: center;
+    width: 80%;
   }
-  .iphone-text{
-    font-family: "Raleway";
-    font-size: 24px;
-  }
-  .paragraph{
-    font-family: "lato";
-    font-size: 20px;
-    margin-top: 35px; 
+  .latest-work__bottom__text{
+    width: 85%;
   }
   .sns{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 50px;
+    width: 100%;
   }
   .sns__link{
-    margin: 0 15px;
+    width: 100%;
   }
 }

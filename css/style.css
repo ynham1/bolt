@@ -29,10 +29,10 @@ a{
   color: #fff;
   font-size: 12px;
   padding: 14px 12px;
+  transition: all .3s;
 }
 .contact-btn:hover{
   color: #333;
-  transition-timing-function: linear;
 }
 .humberger{
   display: none;
@@ -104,6 +104,7 @@ main{
   display: inline-block;
   opacity: 0.7;
   margin-left: 100px;
+  transition: all .3s;
 }
 .img-item:nth-child(n+4){
   margin-top: 80px;
@@ -131,6 +132,7 @@ main{
   margin-left: 90px;
   padding: 14px 20px;
   vertical-align: top;
+  transition: all .3s;
 }
 .e-mail:hover{
   color: #333;
@@ -174,6 +176,7 @@ main{
   font-size: 50px;
   padding: 28px 0;
   text-align: center;
+  transition: all .3s;
   width: 185px;
 }
 .sns__link:hover{
@@ -200,14 +203,10 @@ main{
   }
   .img-iphone{
     margin: 0 auto;
-    padding: 50px 0 25px 0;
   }
   .iphone-side{
-    margin: 0 auto;
-    width: 85%;
-  }
-  .iphone-text{
     margin-top: 20px;
+    width: 90%;
   }
   .paragraph{
     margin-top: 35px; 
@@ -227,10 +226,7 @@ main{
   .img-item:nth-child(-n+3){
     margin-top: 0;
   }
-  .img-item:first-child{
-    margin-top: 40px;
-  }
-  .img-item:nth-child(4){
+  .img-item:nth-child(3n+4){
     margin-top: 80px;
   }
   .img-item:nth-child(n+5){
@@ -246,7 +242,7 @@ main{
     margin: 80px 0 0 0;
   }
   .latest-work__bottom__text{
-    width: 70%;
+    width: 90%;
   }
   .e-mail{
     margin: 0 auto;
@@ -257,8 +253,14 @@ main{
     align-items: center;
     flex-direction: column;
   }
-  .skill-box__item{
-    margin: 88px 0 0 0;
+  .skill-box__item:not(:first-child){
+    margin: 80px 0 0 0;
+  }
+  .sns{
+    font-size: 0;
+  }
+  .sns__link{
+    width: 25%;
   }
 }
 @media (max-width: 767px){
@@ -286,28 +288,19 @@ main{
   .theme-text{
     display: inline-block;
     font-size: 80px;
-    width: 80%;
   }
   .theme-text-free{
     display: inline-block;
     font-size: 30px;
     margin-top: 20px;
-    width: 80%;
   }
   .img-iphone{
     width: 100%;
-  }
-  .iphone-side{
-    width: 80%;
-  }
-  .latest-work__bottom__text{
-    width: 85%;
   }
   .sns{
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 100%;
   }
   .sns__link{
     width: 100%;

@@ -301,6 +301,7 @@ main{
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 50px 0;
   }
   .sns__link{
     width: 100%;
